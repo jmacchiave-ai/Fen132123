@@ -2,7 +2,7 @@
 
 Notas de investigación. Fecha de corte: 26-oct-2026. Método: búsqueda web + verificación directa vía GitHub API (`gh api`) de cada repo (estrellas, último push, licencia) y lectura del SKILL.md real cuando fue posible. "Último push" = fecha del último commit en el repo completo (no necesariamente de esa skill), salvo donde se indica fecha por carpeta. Las cifras de estrellas son del 26-oct-2026.
 
-Comandos de instalación genéricos (Claude Code): `/plugin marketplace add <owner>/<repo>` y luego `/plugin install <plugin>@<marketplace>`. Alternativa manual: copiar la carpeta de la skill (la que contiene SKILL.md) a `C:\Users\jojon\.claude\skills\<nombre>\`.
+Comandos de instalación genéricos (Claude Code): `/plugin marketplace add <owner>/<repo>` y luego `/plugin install <plugin>@<marketplace>`. Alternativa manual: copiar la carpeta de la skill (la que contiene SKILL.md) a `C:\Users\<usuario>\.claude\skills\<nombre>\`.
 
 ---
 
@@ -279,7 +279,7 @@ Instalación mínima recomendada (todo Markdown, sin scripts, bajo riesgo): **(1
 
 ### Inferences
 - Seguridad: ninguna de las 5 recomendadas principales trae scripts ejecutables; todas son Markdown legible (revisar igual antes de instalar). Las que ejecutan código: webapp-testing (Python, `shell=True`), web-artifacts-builder (bash + npm/pnpm desde la red + binario tar.gz), lackeyjb playwright-skill (Node + descarga Chromium), plugin `playwright` (`npx @playwright/mcp@latest` sin versión fija), demo-video (`build.sh` con ffmpeg/edge-tts), hyperframes (npx), Community-Access (instalador de hooks). No se detectó contenido ofuscado en lo leído.
-- Instalar plugins completos trae muchas skills extra (p.ej. el plugin `marketing-skills` trae ~50; `executive-mentor` trae 6-7); demasiadas skills activas pueden competir en el disparo con las skills propias `pitch-ganador`/`defensa-jurado`. Alternativa: copiar solo las carpetas puntuales a `C:\Users\jojon\.claude\skills\`.
+- Instalar plugins completos trae muchas skills extra (p.ej. el plugin `marketing-skills` trae ~50; `executive-mentor` trae 6-7); demasiadas skills activas pueden competir en el disparo con las skills propias `pitch-ganador`/`defensa-jurado`. Alternativa: copiar solo las carpetas puntuales a `C:\Users\<usuario>\.claude\skills\`.
 - Prioridad temporal (hoy 26-oct, evento 4-5 nov): instalar y probar esta semana, no el día del evento.
 
 ### Gaps
